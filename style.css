@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+.cover{
+    border: 1px solid #000;
+    width: 700px;
+    height: 500px;
+    position: relative;
+    font-weight: 800;
+    font-family:  sans-serif;
+}
+
+.start-btn{
+    background-color: #e3a92d; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 8px;
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform:translateX(-50%)
+}
+.start-screen{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/81rH94j3apL.png);
+    background-size: 400px;
+    background-position-x: center;
+    background-position-y: calc( 90px );
+    background-repeat: no-repeat;
+    display: none;
+}
+.play-game{
+    /* background-color: #e3a92d; */
+    height:100%;
+    background-size: cover;
+    background-position-x: -30px;
+    background-repeat: no-repeat;
+    /* display: flex;
+    justify-content: center; */
+    
+    background-image: url(https://img.freepik.com/free-photo/red-black-brush-stroke-banner-background-perfect-canva_1361-3597.jpg?w=2000);
+}
+
+.group-choose{
+    margin:0 auto;
+    display: flex;
+    width:60%;
+    height: 160px;
+}
+.stage{
+    height:70%;
+    display: flex;
+}
+.main-btn{
+    margin:16px;
+    width:30%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    overflow: hidden;
+    /* aspect-ratio: 5/5 ; */
+}
+.stage-item{
+    padding: 70px;
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stage-item img{
+    height:100%;
+}
+.left{
+    transform:rotate(90deg);
+}
+.right{
+    transform:rotate(-90deg);
+}
+.retry-btn{
+    width: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+}
+.prepare{
+    width: 20%;
+    margin:0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display:none;
+}
+.prepare img{
+    width: 100%;
+}
+.re-result{
+    width: 50%;
+}
+.play-btn{
+    width:30% ;
+}
+.result{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+    font-size: 2rem;
+    font-family: Lucida Handwriting;
+}
